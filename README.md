@@ -44,10 +44,11 @@ MAKEFUN_ENV_URL=http://127.0.0.1:8080 python main.py
 It polls `/game`, and while the game is on `your_move` it posts its choice to
 `/move`. When the environment reports `done`, it exits.
 
-To reproduce the shipped file from source:
+To reproduce the shipped file, expand `packs/` from the submission bundle to get
+the readable module, then:
 
 ```sh
-makefun compress engine.py --out main.py
+makefun compress <source.py> --out main.py
 ```
 
 ## Layout
